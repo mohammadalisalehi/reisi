@@ -1,7 +1,7 @@
 body {background-color: #fff; direction: rtl;}
 #pic-cover{position:relative;background-image:url(images/cover.jpg);height:100%;background-repeat:no-repeat;background-size:cover;min-height:100vh; }
 #pic-cover .title {position: absolute;right: 3em;top: 3em;}
-#pic-cover .title h2, #pic-cover .title h3{;font-weight: 700;text-align: center;color: #e6e6e6;text-shadow: 0px 0px 10px rgb(97, 97, 97);}
+#pic-cover .title h2, #pic-cover .title h3{;font-weight: 700;text-align: center;color: #e6e6e6;text-shadow: 0px 0px 15px rgb(97, 97, 97);}
 #pic-cover h2 {font-size: 5.5em;margin-bottom: 0;}
 #pic-cover h3 {font-size: 2.3em; padding: 0 0.6em;}
 article {padding-top: 2em; position:relative;}
@@ -9,7 +9,6 @@ article:before {content: "";width: 1px;height: 103%;left: 50%;top: -53px;positio
 article h4 {text-align: center;font-size: 3em;font-weight: 600;}
 article ul {position: relative;}
 article ul:after {content: "";position: absolute;background-color: #ddd;width: 2px;top: 9em;right: 50%;z-index: 10;height: 100%;}
-article ul li {}
 article ul div.timeline {position: absolute; background-color: #eee; border-radius: 50%; width: 200px; height: 200px}
 article{width: 100%;margin: 30px auto;position: relative;padding: 0 10px;-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease;transition: all 0.4s ease;}
 .timeline-item {margin-bottom: 50px;position: relative;}
@@ -33,7 +32,7 @@ footer p {line-height: 130px;margin-bottom: 0;}
 footer p a {color: #ddd}
 footer p a:hover {color: #fff}
 div.info-pic {text-align: center;}
-.timeline-content p {text-align: justify;margin-bottom: 0;}
+.timeline-content p {text-align: justify;margin-bottom:0;}
 .timeline-content h2 {margin-bottom: 0; margin-top: 1em}
 
 

@@ -33,7 +33,7 @@ DataSetSelect:{border:"1px solid rgba(0, 0, 0, .3)",outline:"none"}};
 					"categoryField": "category",
 					"startDuration": 1,
 					"categoryAxis": {
-						"gridPosition": "start"
+					"gridPosition": "start"
 					},
 					"trendLines": [],
 					"graphs": [
