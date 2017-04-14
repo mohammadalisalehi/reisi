@@ -104,3 +104,10 @@ $(document).ready(function(){
         $(".news").fadeToggle("slow");
     });
 });
+
+
+$(document).ready(function(){
+    $(".title-fade").click(function(){
+        $(".body-fade").fadeToggle("slow");
+    });
+});

@@ -47,4 +47,4 @@ article.f {padding: 2em 0}
 
 .news {padding: 4em 0;}
 
-.title-news {margin-bottom: .5em ; cursor: pointer;}
+.title-news, .title-article {margin-bottom: .5em ; cursor: pointer;}
