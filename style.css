@@ -4,13 +4,13 @@ body {background-color: #fff; direction: rtl;}
 #pic-cover .title h2, #pic-cover .title h3{;font-weight: 700;text-align: center;color: #e6e6e6;text-shadow: 0px 0px 15px rgb(97, 97, 97);}
 #pic-cover h2 {font-size: 5.5em;margin-bottom: 0;}
 #pic-cover h3 {font-size: 2.3em; padding: 0 0.6em;}
-article {padding-top: 2em; position:relative;}
-article:before {content: "";width: 1px;height: 103%;left: 50%;top: -53px;position: absolute;background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(51, 101, 121) 7%, rgb(51, 101, 121) 93%, rgba(80,80,80,0) 100%);}
-article h4 {text-align: center;font-size: 3em;font-weight: 600;}
-article ul {position: relative;}
-article ul:after {content: "";position: absolute;background-color: #ddd;width: 2px;top: 9em;right: 50%;z-index: 10;height: 100%;}
-article ul div.timeline {position: absolute; background-color: #eee; border-radius: 50%; width: 200px; height: 200px}
-article{width: 100%;margin: 30px auto;position: relative;padding: 0 10px;-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease;transition: all 0.4s ease;}
+article.timeline-article {padding-top: 2em; position:relative;}
+article.timeline-article:before {content: "";width: 1px;height: 103%;left: 50%;top: -53px;position: absolute;background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(51, 101, 121) 7%, rgb(51, 101, 121) 93%, rgba(80,80,80,0) 100%);}
+article.timeline-article h4 {text-align: center;font-size: 3em;font-weight: 600;}
+article.timeline-article ul {position: relative;}
+article.timeline-article ul:after {content: "";position: absolute;background-color: #ddd;width: 2px;top: 9em;right: 50%;z-index: 10;height: 100%;}
+article.timeline-article ul div.timeline {position: absolute; background-color: #eee; border-radius: 50%; width: 200px; height: 200px}
+article.timeline-article{width: 100%;margin: 30px auto;position: relative;padding: 0 10px;-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-ms-transition: all 0.4s ease;transition: all 0.4s ease;}
 .timeline-item {margin-bottom: 50px;position: relative;}
 .timeline-item:before{content: '';display: block;width: 100%;clear: both;}
 .timeline-icon{background: #e6e6e6;width: 120px;height: 120px;position: absolute;top: 0;left: 45%;overflow: hidden;-webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;border: 1px solid #336579;}
@@ -18,11 +18,9 @@ article{width: 100%;margin: 30px auto;position: relative;padding: 0 10px;-webkit
 .timeline-content:before {content: '';position: absolute;left: 41%;width: 0;height: 0;border-top: 10px solid transparent;border-bottom: 10px solid transparent;border-left: 10px solid #e6e6e6;top: 49px}
 .timeline-content.flot-left:before {content: '';right: 41%;left: inherit;border-left: 0;border-right: 10px solid #e6e6e6;top: 49px}
 .timeline-content.flot-right.last-child {border: none;background-color: rgba(54, 84, 74, 0);}
-.flot-left {float: left;}
-.flot-right {float: right;}
 .timeline-content.flot-right.first-child:before{display: none;}
 .timeline-content h2 {text-align: center; font-weight: 600}
-.title-article,.title-chart {color: #e6e6e6;text-align: center;font-weight: 600;font-size: 3em;padding: .5em 0;background-color: #336579;}
+.title-article,.title-chart,.title-news {color: #e6e6e6;text-align: center;font-weight: 600;font-size: 3em;padding: .5em 0;background-color: #336579;}
 .timeline-icon p {text-align: center; line-height: 120px}
 .chart-election *{font-family: IRANSans,Tahoma,sans-serif!important;}
 .chart-election h3 {text-align: center; font-weight: 600; font-size: 2.3em}
@@ -33,6 +31,20 @@ footer p a {color: #ddd}
 footer p a:hover {color: #fff}
 div.info-pic {text-align: center;}
 .timeline-content p {text-align: justify;margin-bottom:0;}
-.timeline-content h2 {margin-bottom: 0; margin-top: 1em}
+.timeline-content h2 {margin-bottom: 0; margin-top: 1em;}
 
+li[data-tab-content]{display: none;}
+li[data-tab-content].active{display: initial;}
 
+.flot-left {float: left;}
+.flot-right {float: right;}
+.img-article {width: 38%;height: 100%;}
+.reverse{flex-direction: row-reverse;}
+.news-short{padding: 0 3em 0 0;text-align: justify;}
+.reverse .news-short{padding: 0 0 0 3em;text-align: justify;}
+.news h3 {font-weight: 600;}
+article.f {padding: 2em 0}
+
+.news {padding: 4em 0;}
+
+.title-news {margin-bottom: .5em ; cursor: pointer;}

@@ -27,57 +27,80 @@ DataSetSelector:{color:"#000000",selectedBackgroundColor:"#b9cdf5",rollOverBackg
 DataSetCompareList:{color:"#000000",lineHeight:"100%",boxSizing:"initial",webkitBoxSizing:"initial",border:"1px solid rgba(0, 0, 0, .3)"},
 DataSetSelect:{border:"1px solid rgba(0, 0, 0, .3)",outline:"none"}};
 
-	AmCharts.makeChart("chartdiv",
-				{
-					"type": "serial",
-					"categoryField": "category",
-					"startDuration": 1,
-					"categoryAxis": {
-					"gridPosition": "start"
-					},
-					"trendLines": [],
-					"graphs": [
-						{
-							"balloonText": "[[title]] of [[category]]:[[value]]",
-							"fillAlphas": 1,
-							"id": "AmGraph-1",
-							"title": "",
-							"type": "column",
-							"valueField": "column-1"
-						}
-					],
-					"guides": [],
-					"valueAxes": [
-						{
-							"id": "ValueAxis-1",
-							"stackType": "regular",
-							"title": "تعداد رای"
-						}
-					],
-					"allLabels": [],
-					"balloon": {},
-					"titles": [
-						{
-							"id": "Title-1",
-							"size": 15,
-							"text": ""
-						}
-					],
-					"dataProvider": [
-						{
-							"category": "بله",
-							"column-1": 8.6
+AmCharts.makeChart("chartdiv",
+{
+	"type": "serial",
+	"categoryField": "category",
+	"startDuration": 1,
+	"categoryAxis": {
+	"gridPosition": "start"
+	},
+	"trendLines": [],
+	"graphs": [
+		{
+			"balloonText": "[[title]] of [[category]]:[[value]]",
+			"fillAlphas": 1,
+			"id": "AmGraph-1",
+			"title": "",
+			"type": "column",
+			"valueField": "column-1"
+		}
+	],
+	"guides": [],
+	"valueAxes": [
+		{
+			"id": "ValueAxis-1",
+			"stackType": "regular",
+			"title": "تعداد رای"
+		}
+	],
+	"allLabels": [],
+	"balloon": {},
+	"titles": [
+		{
+			"id": "Title-1",
+			"size": 15,
+			"text": ""
+		}
+	],
+	"dataProvider":
+	[
+		{
+			"category": "بله",
+			"column-1": 8.6
 
-						},
-						{
-							"category": "خیر",
-							"column-1": 1.3
+		},
+		{
+			"category": "خیر",
+			"column-1": 1.3
 
-						},
-						{
-							"category": "هنوز تصمیم نگرفته ام",
-							"column-1": 3.4
-						}
-					]
-				}
-			);
+		},
+		{
+			"category": "هنوز تصمیم نگرفته ام",
+			"column-1": 3.4
+		}
+	]
+});
+
+
+
+
+// $('.tab-title').each(function()
+// {
+// 	var first_content = $('[data-tab-navigate]', this).eq(0).attr('data-tab-navigate');
+// 	$('[data-tab-content=' + first_content + ']').addClass('active');
+
+// 	$('[data-tab-navigate]', this).click(function(){
+// 		var navigate = $(this).attr('data-tab-navigate');
+// 		$('[data-tab-content]').removeClass('active');
+// 		$('[data-tab-content=' + navigate + ']').addClass('active');
+// 	});
+// });
+
+
+
+$(document).ready(function(){
+    $(".title-news").click(function(){
+        $(".news").fadeToggle("slow");
+    });
+});
