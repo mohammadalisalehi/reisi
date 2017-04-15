@@ -111,3 +111,9 @@ $(document).ready(function(){
         $(".body-fade").fadeToggle("slow");
     });
 });
+
+$(document).ready(function(){
+    $(".title-chart").click(function(){
+        $(".chart-election").fadeToggle("slow");
+    });
+});

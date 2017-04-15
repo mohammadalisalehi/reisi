@@ -1,4 +1,4 @@
-body {background-color: #fff; direction: rtl;}
+body{background-color: #f4f4f4;direction: rtl;}
 #pic-cover{position:relative;background-image:url(images/cover.jpg);height:100%;background-repeat:no-repeat;background-size:cover;min-height:100vh; }
 #pic-cover .title {position: absolute;right: 3em;top: 3em;}
 #pic-cover .title h2, #pic-cover .title h3{;font-weight: 700;text-align: center;color: #e6e6e6;text-shadow: 0px 0px 15px rgb(97, 97, 97);}
@@ -32,10 +32,8 @@ footer p a:hover {color: #fff}
 div.info-pic {text-align: center;}
 .timeline-content p {text-align: justify;margin-bottom:0;}
 .timeline-content h2 {margin-bottom: 0; margin-top: 1em;}
-
 li[data-tab-content]{display: none;}
 li[data-tab-content].active{display: initial;}
-
 .flot-left {float: left;}
 .flot-right {float: right;}
 .img-article {width: 38%;height: 100%;}
@@ -44,7 +42,59 @@ li[data-tab-content].active{display: initial;}
 .reverse .news-short{padding: 0 0 0 3em;text-align: justify;}
 .news h3 {font-weight: 600;}
 article.f {padding: 2em 0}
+.news {padding: 4em 3em;}
+.chart-election, .news{margin:0 auto; max-width: 1200px}
+.title-news, .title-article, .title-chart {margin-bottom: .5em ; cursor: pointer;}
+.icon-first {display: none;}
+.wrapper{position:relative;margin:0 auto;padding:0;max-width:1200px;width:90%}
 
-.news {padding: 4em 0;}
 
-.title-news, .title-article {margin-bottom: .5em ; cursor: pointer;}
+/*---------------------------------------------------------  @media */
+@media all and (min-width: 320px)and (max-width: 767px)
+{
+	#pic-cover {min-height: 50vh;}
+	#pic-cover .title {    bottom: 1em;right: 0; width: 100%;background-color: rgba(230, 230, 230, 0.17);top: initial;}
+	#pic-cover h2 {font-size: 2.5em;}
+	#pic-cover h3 {font-size: 1.5em;}
+	.title-article, .title-chart, .title-news {font-size: 1.6em; margin-bottom:4px; cursor: pointer;}
+	.timeline-icon {display: none;}
+	.timeline-content { width: 100%; margin-top: 1em; padding: 2em 1em;}
+	.timeline-content:before {display: none;}
+	.timeline-content h2 {font-size: 2em}
+	.timeline-content p {font-size: 1.5em;}
+	.timeline-content.flot-right.last-child {display: none;}
+	article.timeline-article:before{display: none;}
+	article.timeline-article {padding: 0 2px; margin:0;}
+	article.f {padding: 1.5em 0}
+	footer { height: 90px }
+	footer p { line-height: 90px;font-size: 1.1em; }
+	.img-article {width: 100%}
+	.news-short , .reverse .news-short{ padding: 0px 3em;}
+	.news {padding:0; padding-bottom: 3em;}
+	.news-short h3 { text-align: center;margin: 1em 0 .5em 0;}
+	.news-short p {margin: 0}
+}
+
+@media all and (min-width: 768px) and (max-width: 959px)
+{
+	body{background-color: #f4f4f4;}
+	#pic-cover h2 {font-size: 4em;}
+    .timeline-icon {width: 75px;height: 75px;}
+	.timeline-icon p {text-align: center;line-height: 75px;font-size: 1.2em;}
+	.timeline-content.flot-left:before ,.timeline-content:before {top: 26px}
+	.title-article, .title-chart, .title-news {font-size: 2.5em}
+	.news { padding: 4em 3em;}
+}
+
+@media all and (min-width: 960px) and (max-width: 1399px)
+{
+	#pic-cover h3 {font-size: 2em;}
+	#pic-cover h2 {font-size: 4.5em;}
+	.timeline-icon {left: 44.5%;width: 100px; height: 100px;}
+	.timeline-icon p {line-height: 100px;}
+}
+
+@media all and (min-width: 1600px)
+{
+	#pic-cover .title {right: 10%}
+}
